@@ -417,7 +417,7 @@ export function GlobeDemo() {
           <div className="text-center z-50 text-sm md:text-2xl font-bold text-black dark:text-white">
             Introducing, I am Ilham
             <br />
-            <span style={{ color: "blue" }}>Informatics Engineering</span>
+            <span style={{ color: "#0d3740" }}>Informatics Engineering</span>
           </div>
 
           <p className="text-center text-xs w-full z-10 md:text-sm font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
