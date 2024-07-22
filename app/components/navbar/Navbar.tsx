@@ -47,10 +47,10 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`md:flex flex-col items-center md:flex-row md:ml-auto gap-8 cursor-pointer overflow-hidden transition-all duration-300 ${
+        className={`md:flex flex-col items-center md:flex-row md:ml-auto gap-6 cursor-pointer overflow-hidden transition-all duration-300 ${
           isOpen
             ? "max-h-screen opacity-100"
-            : "max-h-0 opacity-0 md:opacity-100"
+            : "max-h-0 md:max-h-full md:opacity-100"
         }`}
       >
         <div
@@ -58,7 +58,7 @@ const Navbar = () => {
             router.push("/");
             closeMenu();
           }}
-          className="bg-[#134f5c] mt-6 bg-opacity-0 hover:bg-opacity-100 py-2 px-3 rounded-md transition duration-300"
+          className="bg-[#134f5c] mt-6 md:mt-0 bg-opacity-0 hover:bg-opacity-100 py-2 px-3 rounded-md transition duration-300"
         >
           Home
         </div>

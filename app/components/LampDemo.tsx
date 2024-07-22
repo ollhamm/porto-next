@@ -18,7 +18,7 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className=" bg-gradient-to-br from-slate-100 to-slate-500 py-4 bg-clip-text text-center text-md font-medium tracking-tight text-transparent md:text-2xl mt-10"
+        className="border-none bg-gradient-to-br from-slate-100 to-slate-500 py-4 bg-clip-text text-center text-md font-medium tracking-tight text-transparent md:text-2xl mt-10"
       >
         My Skill <br />
         <CardHoverEffectDemo projects={projects} />

@@ -1,5 +1,5 @@
 import React from "react";
-import { StickyScrollRevealDemo } from "../components/skill";
+import { StickyScrollRevealDemo } from "../components/Project";
 
 const Project = () => {
   return (
