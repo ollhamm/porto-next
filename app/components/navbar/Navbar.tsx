@@ -12,13 +12,12 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  // Fungsi untuk menutup hamburger menu setelah salah satu menu diklik
   const closeMenu = () => {
     setIsOpen(false);
   };
 
   return (
-    <div className=" text-neutral-300 flex flex-col z-10 md:flex-row bg-[#0d3740] w-full py-6 px-8 text-sm">
+    <div className="text-neutral-300 flex flex-col z-10 md:flex-row bg-[#0d3740] w-full py-6 px-8 text-sm">
       <div className="flex justify-between w-full md:w-auto">
         <div onClick={() => router.push("/")} className="flex cursor-pointer">
           <Image src={"/images/logo.png"} height={30} width={30} alt="logo" />
@@ -29,7 +28,9 @@ const Navbar = () => {
             className="text-neutral-300 focus:outline-none"
           >
             <svg
-              className="w-6 h-6"
+              className={`w-6 h-6 transition-transform duration-300 ${
+                isOpen ? "rotate-90" : "rotate-0"
+              }`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -46,8 +47,10 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className={`md:flex flex-col items-center md:flex-row md:ml-auto gap-6 cursor-pointer ${
-          isOpen ? "flex" : "hidden"
+        className={`md:flex flex-col items-center md:flex-row md:ml-auto gap-8 cursor-pointer overflow-hidden transition-all duration-300 ${
+          isOpen
+            ? "max-h-screen opacity-100"
+            : "max-h-0 opacity-0 md:opacity-100"
         }`}
       >
         <div
@@ -55,7 +58,7 @@ const Navbar = () => {
             router.push("/");
             closeMenu();
           }}
-          className="bg-[#134f5c] bg-opacity-0 hover:bg-opacity-100 py-2 px-3 rounded-md transition duration-300"
+          className="bg-[#134f5c] mt-6 bg-opacity-0 hover:bg-opacity-100 py-2 px-3 rounded-md transition duration-300"
         >
           Home
         </div>

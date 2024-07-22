@@ -421,14 +421,14 @@ export function GlobeDemo() {
           </div>
 
           <p className="text-center text-xs w-full z-10 md:text-sm font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            student at Amikom University Yogyakarta with a focus on Web
-            development I have experience in creating website landing pages, as
-            well as using frameworks such as Next.js, Laravel, and React to
-            build modern web applications. I am interested in both frontend and
-            backend development, and have developed skills in responsive design,
-            API integration, database management, Git, and Terminal usage. I'm
-            excited to continue learning and developing skills in the latest web
-            technologies.
+            I am 19 years old, a student at Amikom University Yogyakarta 5th
+            semester, I have experience in creating website landing pages, as
+            well as being proficient in using frameworks such as Next.js,
+            Laravel, and React to build modern web applications. I am interested
+            in frontend web development, and have developed skills in responsive
+            design, API Integration, database management, Git, and Terminal
+            usage. I am passionate about continuing to learn and develop skills
+            in the latest web latest technologies.
           </p>
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />

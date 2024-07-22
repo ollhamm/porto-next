@@ -31,7 +31,7 @@ export default function Home() {
             HI, I'am ILHAM
           </div>
           <div className="flex text-[#2a606c] items-center text-sm md:text-md ">
-            Frontend Developer
+            Frontend Web Developer
           </div>
           <div className="flex flex-row bg-[#134f5c] bg-opacity-30 p-4 rounded-md cursor-pointer justify-center gap-4 text-white">
             <a
